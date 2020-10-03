@@ -1,0 +1,36 @@
+.landing__gifleft{
+    background-color: #F4A460;
+    border-radius: 20px;
+    padding-top: 20px;
+    padding-left: 2% ;
+    padding-right:  2% ;
+    padding-bottom: 3%;
+    margin: 4%; 
+    height: 400px;
+    /* display: grid;
+    place-items: center; */
+
+}
+
+.landing__head{
+    margin-left: -10px;
+    align-items: center;    
+    margin-bottom: 30px;
+    text-decoration: underline;
+}
+
+.landing__all{
+    display: flex ;
+}
+.landing__gif > img{
+   
+    width: 500px;
+    height: 300px;
+    border-radius: 20px;
+
+}
+
+.landing__text{
+    
+    margin-left: 50px;
+}

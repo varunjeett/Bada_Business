@@ -1,0 +1,29 @@
+
+.landingleft__gifleft{
+    padding-left: 90px ;
+    padding-right: 30px;
+    margin: 50px;
+    background-color: #FFFDD0;
+    border-radius: 20px;
+    height: 400px;
+}
+.landingleft__gifleft > h1{
+    text-align: center;
+    margin-bottom: 30px;
+    flex: 0.5;
+    margin-left: 5% ;
+
+}
+.landingleft__all{
+    display: flex ;
+}
+.landingleft__gif > img{
+    
+    width: 500px;
+    height: 300px;
+    border-radius: 20px;
+
+}
+.landingleft__text{
+    margin-right: 50px;
+}

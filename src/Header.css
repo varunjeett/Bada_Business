@@ -1,0 +1,28 @@
+.header{
+    height: 90px;
+    background-color: #1C2836;
+    display: flex;
+    align-items: center;
+}
+.header__text{
+    
+    margin-left: 60px ;
+}
+.header__text > p{
+    color: white;
+
+}
+.header__div > img{
+    margin-left: 20px;
+    height: 80px;
+    width: 200px;
+}
+
+.header__icons{
+    margin-left: 70%;
+    display: flex;
+}
+.header__icons__css{
+    color: white;
+    margin: 10px;
+}
