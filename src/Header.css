@@ -1,28 +1,98 @@
 .header{
-    height: 90px;
+    height: 100px;
+    width:100%;
     background-color: #1C2836;
     display: flex;
+    flex-direction: row;
     align-items: center;
-}
-.header__text{
-    
-    margin-left: 60px ;
-}
-.header__text > p{
-    color: white;
+    justify-content: space-around;
 
 }
-.header__div > img{
-    margin-left: 20px;
+
+.header__logo{
+    flex: 0.2;
+}
+
+.header__logo > img {
     height: 80px;
     width: 200px;
 }
 
-.header__icons{
-    margin-left: 70%;
+.header__contact {
+    flex: 0.5;
     display: flex;
-}
-.header__icons__css{
+    flex-direction: row;
     color: white;
-    margin: 10px;
+    justify-content: space-around;
+}
+
+.header__text {
+    display: flex;
+    flex-direction: row;
+}
+
+.header__text > h4 {
+    margin-top: 6px ;
+    margin-left: 4px;
+}
+
+
+.header__icons {
+    flex: 0.2;
+    display:flex;
+    flex-direction: column;
+} 
+
+.header__icons__single > a {
+    color:white;
+    text-decoration: none;
+
+}
+
+@media screen and (max-width:960px){
+
+    .header{
+        justify-content: space-around;
+    }
+
+    
+    .header__logo > img {
+        height: 50px;
+        width: 100px;
+    }
+    
+    .header__contact {
+        display: flex;
+        flex-direction: column;
+        color: white;
+    }
+    
+    .header__text {
+        display: flex;
+        flex-direction: row;
+    }
+    
+    .header__text > h4 {
+        font-size: 0.7em;
+        margin-top: 3px ;
+        margin-left:2px;
+    }
+
+    .header__icons{
+        font-size: smaller !important;
+    }
+    
+    .header__end__icons {
+        max-width: 20px;
+        display:flex;
+        flex-direction: column;
+    } 
+    
+    .header__icons__single > a {
+        color:white;
+        text-decoration: none;
+    
+    }
+    
+
 }

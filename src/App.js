@@ -1,6 +1,5 @@
 import React from 'react';
 import './App.css';
-import Header from './Header'
 import {
   BrowserRouter as Router,
   Switch,
@@ -8,7 +7,7 @@ import {
 } from "react-router-dom";
 import MiddlePage from './MiddlePage';
 import Footer from './Footer';
-
+import Header from './Header';
 function App() {
   return (
     <Router>

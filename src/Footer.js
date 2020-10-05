@@ -19,19 +19,19 @@ function Footer() {
             <div className="footer__contact">
                 <div className="footer__text">
                     <span >
-                        <PersonIcon />
+                        <PersonIcon className="icon" />
                     </span>
                     <h5>Simranjeet kaur</h5>
                 </div>
 
                 <div className="footer__text">
-                    <span><BusinessCenterIcon /></span>
+                    <span><BusinessCenterIcon className="icon"/></span>
                     <h5>IBC </h5>
                 </div>
 
                 <div className="footer__text">
                     <span>
-                        <PhoneIcon />
+                        <PhoneIcon className="icon"/>
                     </span>
                     <h5> 9315744106</h5>
                 </div>
@@ -39,7 +39,7 @@ function Footer() {
 
                 <div className="footer__text">
                     <span>
-                        <MailIcon />
+                        <MailIcon className="icon" />
                     </span>
                     
                     <h5> kuldip_simran@yahoo.com</h5>
@@ -50,11 +50,8 @@ function Footer() {
 
             <div className="footer__icons">   
                 <div className="footer__icons__single">
-                <a href="https://bit.ly/2EVbbsr" target="_blank" >  { <InstagramIcon/> }   </a>
-                </div>
-
-                <div className="footer__icons__single">
-                <a href="https://bit.ly/2GbR4Ha" target="_blank" > { <FacebookIcon/> }  </a>
+                <a href="https://bit.ly/2EVbbsr" target="_blank" >  { <InstagramIcon fontSize="large" className="icons"/> }</a>
+                <a href="https://bit.ly/2GbR4Ha" target="_blank" > { <FacebookIcon fontSize="large" className="icons" /> }</a>
                 </div>
             </div>
 

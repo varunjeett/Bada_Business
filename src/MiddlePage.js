@@ -17,10 +17,10 @@ function MiddlePage() {
     const [number, setNumber] = useState("");
 
 
-    const savedata = (event) => {
+    const saveData = (event) => {
         event.preventDefault();
 
-        if (name && email && number && (number.length === 10) && email === ":@:") {
+        if (name && email && number ) {
             db.collection("info").add({
                 name: name,
                 email: email,
@@ -44,11 +44,15 @@ function MiddlePage() {
     return (
         <div className="middlePage">
             <div className="middlePage__first">
+
+                <div className="blank">
+
+                </div>
                
                     <div className="middlePage__form"  >
                         <form className="review__table">
                             <br/>
-                            <h2>Register Now</h2>
+                            <h2>Register Now !!!</h2>
 
                             <input type="text" value={name} placeholder="Name"
                                 onChange={(e) => setName(e.target.value)}
@@ -62,7 +66,7 @@ function MiddlePage() {
                             <input type="tel" value={number} placeholder="Mobile"
                                 onChange={(e) => setNumber(e.target.value)} />
 
-                            <input className="review__button" type="submit" onClick={savedata} />
+                            <input className="review__button" type="submit" onClick={saveData} />
 
                         </form>
 
