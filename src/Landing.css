@@ -1,23 +1,17 @@
 .landing__gifleft{
-    background-color: #F4A460;
+    background-color: rgb(1, 9, 54);
     border-radius: 40px;
     display: flex;
     flex-direction: column;
-    /* align-items: center; */
-    /* text-align: center; */
     width: 90%;
-    /* padding-top: 20px;
-    padding-left: 2% ;
-    padding-right:  2% ;
-    padding-bottom: 3%; */
     margin: 4%;
 }
 
 .landing__head{
     padding-top: 10px;
     flex: 0.3;
-    text-decoration: underline;
     text-align: center;
+    color: white;
 }
 
 
@@ -40,14 +34,16 @@
 }
 
 .landing__text{
+    color: white;
     display: grid;
     place-content: center;
+    font-weight: bolder;
 }
 
 @media screen and (max-width:960px){
 
     .landing__gifleft{
-        background-color: #F4A460;
+        background-color: rgb(1, 9, 54);
         border-radius: 40px;
         align-items: center;
         width: 90%;
@@ -56,8 +52,9 @@
     
     .landing__head{
         padding-top: 10px;
-        text-decoration: underline;
         text-align: center;
+        font-size: 0.5em;
+        font-weight: 500;
     }
       
     .landing__gif{
@@ -67,6 +64,8 @@
 
     .landing__text{
         text-align: left ;
+        font-size: 0.7em;
+        font-weight: 500;
     }
     
 

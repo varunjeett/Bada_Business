@@ -1,5 +1,5 @@
 .landingleft__gifleft{
-    background-color: #FFFDD0;
+    background-color:rgb(1, 9, 54);
     border-radius: 40px;
     display: flex;
     flex-direction: column;
@@ -10,7 +10,7 @@
 .landingleft__head{
     padding-top: 10px;
     flex: 0.3;
-    text-decoration: underline;
+    color: white;
 }
 
 
@@ -35,12 +35,14 @@
 .landingleft__text{
     display: grid;
     place-content: center;
+    color: white;
+    font-weight: bolder;
 }
 
 @media screen and (max-width:960px){
 
     .landingleft__gifleft{
-        background-color: #FFFDD0;
+        background-color: rgb(1, 9, 54);
         border-radius: 40px;
         align-items: center;
         width: 90%;
@@ -49,8 +51,9 @@
     
     .landingleft__head{
         padding-top: 10px;
-        text-decoration: underline;
         text-align: center;
+        font-size: 0.5em;
+        font-weight: 500;
     }
       
     .landingleft__gif{
@@ -60,6 +63,8 @@
 
     .landingleft__text{
         text-align: left ;
+        font-size: 0.7em;
+        font-weight: 500;
     }
 
 
