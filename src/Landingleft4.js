@@ -4,7 +4,10 @@ import './Landingleft.css'
 function Landingleft4() {
     return (
         <div className="landingleft__gifleft">
-            <h1>Life Time Membership (LTM)</h1>
+            <div className="landingleft__head">
+                <h1>Life Time Membership (LTM)</h1>
+            </div>
+            
             <div className="landingleft__all">
                 <div className="landingleft__text">
                     <p>

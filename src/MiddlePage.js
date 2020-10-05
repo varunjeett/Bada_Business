@@ -44,9 +44,8 @@ function MiddlePage() {
     return (
         <div className="middlePage">
             <div className="middlePage__first">
-                <div className="middlePage__form">
-                    <div className="review__form"  >
-
+               
+                    <div className="middlePage__form"  >
                         <form className="review__table">
                             <br/>
                             <h2>Register Now</h2>
@@ -68,8 +67,6 @@ function MiddlePage() {
                         </form>
 
                     </div>
-                </div>
-
             </div>
             <div className="middlePage__head">
                 <div className="middle__landing">
@@ -91,14 +88,18 @@ function MiddlePage() {
                     <Landingleft6 />
                 </div>
             </div>
-            <h1>Our Eminent Billionaire Professors</h1>
+           
             <div className="middle__bottom">
+            <h1>Our Eminent Billionaire Professors</h1>
                 <img src={f1} />
                 <img src={f2} />
             </div>
-            <a href="https://www.badabusiness.com/" target="_black">
+            <div className="end__button">
+                 <a href="https://www.badabusiness.com/" target="_black">
                 <button>View All</button>
             </a>
+            </div>
+           
 
         </div>
     )

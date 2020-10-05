@@ -6,7 +6,10 @@ import './Landing.css'
 function Landing3() {
     return (
         <div className="landing__gifleft">
-            <h1>Problem Solving Courses (PSC)</h1>
+            <div className="landing__head">
+                <h1>Problem Solving Courses (PSC)</h1>
+            </div>
+
             <div className="landing__all">
                 <div className="landing__gif">
                     <img src={img1} />
@@ -21,7 +24,7 @@ function Landing3() {
                         - Do you want to acquire new customers and need help?<br />
                         - Do you want to learn strategies to thrive in Cut throat competition?<br /> <br />
 
-                        <b>Problem Solving Courses are designed to give practical solutions & learning to the most important burning problems faced by Entrepreneurs.   
+                        <b>Problem Solving Courses are designed to give practical solutions & learning to the most important burning problems faced by Entrepreneurs.
                            If you are interested in starting your own business or want to expand your existing business, but, are facing specific challenges, you can buy these courses.</b>  </p>
                 </div>
             </div>

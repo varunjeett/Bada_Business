@@ -6,7 +6,10 @@ import './Landing.css'
 function Landing5() {
     return (
         <div className="landing__gifleft">
-            <h1>Customized Learning Solutions - White Labeled LMS</h1>
+            <div className="landing__head">
+                <h1>Customized Learning Solutions - White Labeled LMS</h1>
+            </div>
+
             <div className="landing__all">
                 <div className="landing__gif">
                     <img src={img1} />

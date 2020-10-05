@@ -4,7 +4,9 @@ import './Landingleft.css'
 function Landingleft() {
     return (
         <div className="landingleft__gifleft">
+            <div className="landingleft__head">
             <h1>Become an Independent Business Consultant (IBC)</h1>
+            </div>
             <div className="landingleft__all">
                 <div className="landingleft__text">
                     <p>
