@@ -12,7 +12,7 @@ function Landing3() {
 
             <div className="landing__all">
                 <div className="landing__gif">
-                    <img src={img1} />
+                    <img src={img1} alt="Relevant Photograph here" />
                 </div>
                 <div className="landing__text">
                     <p>

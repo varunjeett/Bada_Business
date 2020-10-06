@@ -23,7 +23,7 @@ function Landingleft4() {
                         Lifetime access to Aladdin Ka Chirag</b>  </p>
                 </div>
                 <div className="landingleft__gif">
-                    <img src={img1} />
+                    <img src={img1}  alt="Relevant Photograph Here" />
                 </div>
             </div>
         </div>

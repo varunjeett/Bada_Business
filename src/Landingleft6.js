@@ -22,7 +22,7 @@ function Landingleft6() {
                            Connect with us for a detailed discussion on the subject. </p>
                 </div>
                 <div className="landingleft__gif">
-                    <img src={img1} />
+                    <img src={img1} alt="Relevant Photograph Here" />
                 </div>
             </div>
         </div>
