@@ -13,7 +13,7 @@ function Header() {
         <div className="header">
 
             <div className="header__logo">
-                <img src={logo} />
+                <img src={logo}  alt="Relevant Photograph here" />
             </div>
 
             <div className="header__contact">
@@ -50,8 +50,8 @@ function Header() {
 
             <div className="header__end__icons">   
                 <div className="header__icons__single">
-                <a href="https://bit.ly/2EVbbsr" target="_blank" >  { <InstagramIcon fontSize="large"  className="header__icons"/> }</a>
-                <a href="https://bit.ly/2GbR4Ha" target="_blank" > { <FacebookIcon fontSize="large"  className="header__icons" /> }</a>
+                <a href="https://bit.ly/2EVbbsr" target="_blank" rel="noopener noreferrer" >  { <InstagramIcon fontSize="large"  className="header__icons"/> }</a>
+                <a href="https://bit.ly/2GbR4Ha" target="_blank"  rel="noopener noreferrer" > { <FacebookIcon fontSize="large"  className="header__icons" /> }</a>
                 </div>
             </div>
 

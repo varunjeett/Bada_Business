@@ -13,7 +13,7 @@ function Footer() {
         <div className="footer">
 
             <div className="footer__logo">
-                <img src={logo} />
+                <img src={logo} alt="Relevant Photograph here" />
             </div>
 
             <div className="footer__contact">
@@ -50,8 +50,8 @@ function Footer() {
 
             <div className="footer__icons">   
                 <div className="footer__icons__single">
-                <a href="https://bit.ly/2EVbbsr" target="_blank" >  { <InstagramIcon fontSize="large" className="icons"/> }</a>
-                <a href="https://bit.ly/2GbR4Ha" target="_blank" > { <FacebookIcon fontSize="large" className="icons" /> }</a>
+                <a href="https://bit.ly/2EVbbsr" target="_blank" rel="noopener noreferrer" >  { <InstagramIcon fontSize="large" className="icons"/> }</a>
+                <a href="https://bit.ly/2GbR4Ha" target="_blank" rel="noopener noreferrer" > { <FacebookIcon fontSize="large" className="icons" /> }</a>
                 </div>
             </div>
 

@@ -20,7 +20,7 @@ function Landingleft() {
                            Earn Rs1 Lakh – Rs20 Lakh per month that too at a Very Low Investment!</b>  </p>
                 </div>
                 <div className="landingleft__gif">
-                    <img src={img1} />
+                    <img src={img1} alt="Relevant Photograph Here" />
                 </div>
             </div>
         </div>
