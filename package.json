@@ -10,7 +10,7 @@
     "@testing-library/user-event": "^7.2.1",
     "email-validator": "^2.0.4",
     "firebase": "^7.22.1",
-    "firebase-tools": "^8.11.2",
+    "firebase-tools": "^8.12.0",
     "formik": "^2.1.7",
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
