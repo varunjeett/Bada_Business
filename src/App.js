@@ -16,9 +16,12 @@ function App() {
         <Switch>
 
           <Route path="/">
-            <Header />
+            <div className="app__layout">
+              <Header />
             <MiddlePage />
             <Footer />
+            </div>
+            
           </Route>
 
         </Switch>
