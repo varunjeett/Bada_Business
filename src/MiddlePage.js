@@ -50,7 +50,6 @@ const MiddlePage = () => (
         values,
         touched,
         errors,
-        isSubmitting,
         handleChange,
         handleBlur,
         handleSubmit,
@@ -60,54 +59,72 @@ const MiddlePage = () => (
         <div className="middlePage">
 
           <div className="img__css">
-            <img src={img1} />
+            <img src={img1} alt="banner" />
           </div>
 
-          
+
           <div className="middlePage__first">
             <div className="blank"></div>
             <div className="middlePage__form">
               {/* form below */}
               <form onSubmit={handleSubmit} className="review__table">
                 <h2>Register Now !!!</h2>
-                <label htmlFor="name"></label>
-                <input
-                  name="name"
-                  type="text"
-                  value={values.name}
-                  placeholder=" Enter your Name"
-                  onChange={handleChange}
-                  onBlur={handleBlur}
-                />
-                {errors.name && touched.name && (
-                  <div className="input-feedback">*{errors.name}</div>
-                )}
 
-                <label htmlFor="email"></label>
-                <input
-                  name="email"
-                  type="email"
-                  value={values.email}
-                  placeholder=" Enter your Email"
-                  onChange={handleChange}
-                  onBlur={handleBlur}
-                />
-                {errors.email && touched.email && (
-                  <div className="input-feedback">*{errors.email}</div>
-                )}
 
-                <label htmlFor="number"></label>
-                <input
-                  name="number"
-                  type="tel"
-                  value={values.number}
-                  placeholder=" Enter your Contact No."
-                  onChange={handleChange}
-                  onBlur={handleBlur}
-                />
-                {errors.number && touched.number && (
-                  <div className="input-feedback">*{errors.number}</div>
-                )}
+
+                <div className="inputform">
+                  <label htmlFor="name"></label>
+                  <input
+                    name="name"
+                    type="text"
+                    value={values.name}
+                    placeholder=" Enter your Name"
+                    onChange={handleChange}
+                    onBlur={handleBlur}
+                  />
+                  {errors.name && touched.name && (
+                    <div className="input-feedback">*{errors.name}</div>
+                  )}
+                </div>
+
+
+                <div className="inputform">
+                  <label htmlFor="email"></label>
+                  <input
+                    name="email"
+                    type="email"
+                    value={values.email}
+                    placeholder=" Enter your Email"
+                    onChange={handleChange}
+                    onBlur={handleBlur}
+                  />
+                  {/* <div className="form__errors"> */}
+                  {errors.email && touched.email && (
+
+                    <div className="input-feedback">*{errors.email}</div>
+                  )}
+                  {/* </div> */}
+
+
+                </div>
+
+                <div className="inputform">
+
+
+                  <label htmlFor="number"></label>
+                  <input
+                    name="number"
+                    type="tel"
+                    value={values.number}
+                    placeholder=" Enter your Contact No."
+                    onChange={handleChange}
+                    onBlur={handleBlur}
+                  />
+                  {errors.number && touched.number && (
+                    <div className="input-feedback">*{errors.number}</div>
+                  )}
+
+                </div>
 
                 <div className="review__table__inside">
                   <input type="checkbox" />
@@ -137,44 +154,51 @@ const MiddlePage = () => (
             <form onSubmit={handleSubmit} className="review__table__css">
               <h2>Register Now !!!</h2>
 
-              <label htmlFor="name"></label>
-              <input
-                name="name"
-                type="text"
-                value={values.name}
-                placeholder=" Enter your Name"
-                onChange={handleChange}
-                onBlur={handleBlur}
-              />
-              {errors.name && touched.name && (
-                <div className="input-feedback">*{errors.name}</div>
-              )}
+              <div className="inputform">
+                <label htmlFor="name"></label>
+                <input
+                  name="name"
+                  type="text"
+                  value={values.name}
+                  placeholder=" Enter your Name"
+                  onChange={handleChange}
+                  onBlur={handleBlur}
+                />
+                {errors.name && touched.name && (
+                  <div className="input-feedback">*{errors.name}</div>
+                )}
+              </div>
 
-              <label htmlFor="email"></label>
-              <input
-                name="email"
-                type="email"
-                value={values.email}
-                placeholder=" Enter your Email"
-                onChange={handleChange}
-                onBlur={handleBlur}
-              />
-              {errors.email && touched.email && (
-                <div className="input-feedback">*{errors.email}</div>
-              )}
+              <div className="inputform">
+                <label htmlFor="email"></label>
+                <input
+                  name="email"
+                  type="email"
+                  value={values.email}
+                  placeholder=" Enter your Email"
+                  onChange={handleChange}
+                  onBlur={handleBlur}
+                />
+                {errors.email && touched.email && (
+                  <div className="input-feedback">*{errors.email}</div>
+                )}
+              </div>
 
-              <label htmlFor="number"></label>
-              <input
-                name="number"
-                type="tel"
-                value={values.number}
-                placeholder=" Enter your Contact No."
-                onChange={handleChange}
-                onBlur={handleBlur}
-              />
-              {errors.number && touched.number && (
-                <div className="input-feedback">*{errors.number}</div>
-              )}
+              <div className="inputform">
+                <label htmlFor="number"></label>
+                <input
+                  name="number"
+                  type="tel"
+                  value={values.number}
+                  placeholder=" Enter your Contact No."
+                  onChange={handleChange}
+                  onBlur={handleBlur}
+                />
+                {errors.number && touched.number && (
+                  <div className="input-feedback">*{errors.number}</div>
+                )}
+
+              </div>
 
               <div className="review__table__inside">
                 <input type="checkbox" />
