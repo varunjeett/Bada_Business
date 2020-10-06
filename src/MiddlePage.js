@@ -4,6 +4,7 @@ import Landingleft from "./Landingleft";
 import "./MiddlePage.css";
 import f1 from "./Media/f1.jpg";
 import f2 from "./Media/f2.jpg";
+import img1 from './Media/banner0.gif'
 import Landing3 from "./Landing3";
 import Landing5 from "./Landing5";
 import Landingleft4 from "./Landingleft4";
@@ -16,9 +17,9 @@ import { Formik } from "formik";
 const MiddlePage = () => (
   <Formik
     initialValues={{ name: "", number: "", email: "" }}
-    
+
     // eslint-disable-next-line
-    onSubmit={(values, {setSubmitting}) => {
+    onSubmit={(values, { setSubmitting }) => {
       console.log(values);
 
       db.collection("info")
@@ -57,14 +58,19 @@ const MiddlePage = () => (
 
       return (
         <div className="middlePage">
+
+          <div className="img__css">
+            <img src={img1} />
+          </div>
+
+          
           <div className="middlePage__first">
             <div className="blank"></div>
-
             <div className="middlePage__form">
+              {/* form below */}
               <form onSubmit={handleSubmit} className="review__table">
                 <h2>Register Now !!!</h2>
-
-                <label htmlFor="name">Name:</label>
+                <label htmlFor="name"></label>
                 <input
                   name="name"
                   type="text"
@@ -74,10 +80,10 @@ const MiddlePage = () => (
                   onBlur={handleBlur}
                 />
                 {errors.name && touched.name && (
-                  <div className="input-feedback">{errors.name}</div>
+                  <div className="input-feedback">*{errors.name}</div>
                 )}
 
-                <label htmlFor="email">Email:</label>
+                <label htmlFor="email"></label>
                 <input
                   name="email"
                   type="email"
@@ -87,10 +93,10 @@ const MiddlePage = () => (
                   onBlur={handleBlur}
                 />
                 {errors.email && touched.email && (
-                  <div className="input-feedback">{errors.email}</div>
+                  <div className="input-feedback">*{errors.email}</div>
                 )}
 
-                <label htmlFor="number">Contact No.:</label>
+                <label htmlFor="number"></label>
                 <input
                   name="number"
                   type="tel"
@@ -100,7 +106,7 @@ const MiddlePage = () => (
                   onBlur={handleBlur}
                 />
                 {errors.number && touched.number && (
-                  <div className="input-feedback">{errors.number}</div>
+                  <div className="input-feedback">*{errors.number}</div>
                 )}
 
                 <div className="review__table__inside">
@@ -124,11 +130,14 @@ const MiddlePage = () => (
             </div>
           </div>
 
+
+
+
           <div className="middlePage__from__css">
             <form onSubmit={handleSubmit} className="review__table__css">
               <h2>Register Now !!!</h2>
 
-              <label htmlFor="name">Name:</label>
+              <label htmlFor="name"></label>
               <input
                 name="name"
                 type="text"
@@ -138,10 +147,10 @@ const MiddlePage = () => (
                 onBlur={handleBlur}
               />
               {errors.name && touched.name && (
-                <div className="input-feedback">{errors.name}</div>
+                <div className="input-feedback">*{errors.name}</div>
               )}
 
-              <label htmlFor="email">Email:</label>
+              <label htmlFor="email"></label>
               <input
                 name="email"
                 type="email"
@@ -151,10 +160,10 @@ const MiddlePage = () => (
                 onBlur={handleBlur}
               />
               {errors.email && touched.email && (
-                <div className="input-feedback">{errors.email}</div>
+                <div className="input-feedback">*{errors.email}</div>
               )}
 
-              <label htmlFor="number">Contact No.:</label>
+              <label htmlFor="number"></label>
               <input
                 name="number"
                 type="tel"
@@ -164,7 +173,7 @@ const MiddlePage = () => (
                 onBlur={handleBlur}
               />
               {errors.number && touched.number && (
-                <div className="input-feedback">{errors.number}</div>
+                <div className="input-feedback">*{errors.number}</div>
               )}
 
               <div className="review__table__inside">
@@ -210,8 +219,8 @@ const MiddlePage = () => (
 
           <div className="middle__bottom">
             <h1>Our Eminent Billionaire Professors</h1>
-            <img src={f1} alt="Relevant Photograph Here"/>
-            <img src={f2} alt="Relevant Photograph Here"/>
+            <img src={f1} alt="Relevant Photograph Here" />
+            <img src={f2} alt="Relevant Photograph Here" />
           </div>
           <div className="end__button">
             <a
