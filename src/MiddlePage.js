@@ -4,7 +4,7 @@ import Landingleft from "./Landingleft";
 import "./MiddlePage.css";
 import f1 from "./Media/f1.jpg";
 import f2 from "./Media/f2.jpg";
-import img1 from './Media/banner0.gif'
+import img1 from "./Media/banner0.gif";
 import Landing3 from "./Landing3";
 import Landing5 from "./Landing5";
 import Landingleft4 from "./Landingleft4";
@@ -14,10 +14,13 @@ import { db } from "./firebase";
 import * as Yup from "yup";
 import { Formik } from "formik";
 
+const obj=new Date();
+
 const MiddlePage = () => (
+  
   <Formik
     initialValues={{ name: "", number: "", email: "" }}
-
+    
     // eslint-disable-next-line
     onSubmit={(values, { setSubmitting }) => {
       console.log(values);
@@ -27,6 +30,7 @@ const MiddlePage = () => (
           name: values.name,
           number: values.number,
           email: values.email,
+          timestamp: obj.getTime()
         })
         .then(
           alert("Thanks for the submission, we'll get back to you soon !!!")
@@ -34,15 +38,11 @@ const MiddlePage = () => (
         .catch((error) => {
           alert(error.message);
         });
-
-      window.location.reload();
     }}
     validationSchema={Yup.object().shape({
       name: Yup.string().required("Name is required"),
-      email: Yup.string().email().required("Email is required"),
-      number: Yup.string()
-        .length(10, "Length should be equal to 10")
-        .required("Phone is required"),
+      email: Yup.string().email(),
+      number: Yup.string().length(10, "Length should be equal to 10"),
     })}
   >
     {(props) => {
@@ -56,106 +56,80 @@ const MiddlePage = () => (
       } = props;
 
       return (
-        <div className="middlePage">
+        <div className="middlepage">
 
-          <div className="img__css">
-            <img src={img1} alt="banner" />
+          <div className="middlepage__component1">
+              <div className="blank"></div>
+              <div className="middlepage__form">
+                <form onSubmit={handleSubmit} className="review__table">
+                  <h2>Register Now !!!</h2>
+                  
+                  <div className="inputform">
+                    <label htmlFor="name">Name:</label>
+                    <input
+                      name="name"
+                      type="text"
+                      value={values.name}
+                      placeholder=" Enter your Name"
+                      inputform     onChange={handleChange}
+                      onBlur={handleBlur}
+                    />
+                    {errors.name && touched.name && (
+                      <div className="input-feedback">*{errors.name}</div>
+                    )}
+                  </div>
+
+                  <div className="inputform">
+                    <label htmlFor="email">Email:</label>
+                    <input
+                      name="email"
+                      type="email"
+                      value={values.email}
+                      placeholder=" Enter your Email"
+                      onChange={handleChange}
+                      onBlur={handleBlur}
+                    />
+
+                    {errors.email && touched.email && (
+                      <div className="input-feedback">*{errors.email}</div>
+                    )}
+                  </div>
+
+                  <div className="inputform">
+                    <label htmlFor="number">Contact No.:</label>
+                    <input
+                      name="number"
+                      type="tel"
+                      value={values.number}
+                      placeholder=" Enter your Contact No."
+                      onChange={handleChange}
+                      onBlur={handleBlur}
+                    />
+                    {errors.number && touched.number && (
+                      <div className="input-feedback">*{errors.number}</div>
+                    )}
+                  </div>
+
+                  <div className="button__div">
+                    <Button
+                      className="review__button"
+                      type="submit"
+                      onClick={handleSubmit}
+                    >
+                      REGISTER
+                    </Button>
+                  </div>
+                </form>
+              </div>
+            
           </div>
-
-
-          <div className="middlePage__first">
-            <div className="blank"></div>
-            <div className="middlePage__form">
-              {/* form below */}
-              <form onSubmit={handleSubmit} className="review__table">
-                <h2>Register Now !!!</h2>
-
-
-
-                <div className="inputform">
-                  <label htmlFor="name"></label>
-                  <input
-                    name="name"
-                    type="text"
-                    value={values.name}
-                    placeholder=" Enter your Name"
-                    onChange={handleChange}
-                    onBlur={handleBlur}
-                  />
-                  {errors.name && touched.name && (
-                    <div className="input-feedback">*{errors.name}</div>
-                  )}
-                </div>
-
-
-                <div className="inputform">
-                  <label htmlFor="email"></label>
-                  <input
-                    name="email"
-                    type="email"
-                    value={values.email}
-                    placeholder=" Enter your Email"
-                    onChange={handleChange}
-                    onBlur={handleBlur}
-                  />
-                  {/* <div className="form__errors"> */}
-                  {errors.email && touched.email && (
-
-                    <div className="input-feedback">*{errors.email}</div>
-                  )}
-                  {/* </div> */}
-
-
-                </div>
-
-                <div className="inputform">
-
-
-                  <label htmlFor="number"></label>
-                  <input
-                    name="number"
-                    type="tel"
-                    value={values.number}
-                    placeholder=" Enter your Contact No."
-                    onChange={handleChange}
-                    onBlur={handleBlur}
-                  />
-                  {errors.number && touched.number && (
-                    <div className="input-feedback">*{errors.number}</div>
-                  )}
-
-                </div>
-
-                <div className="review__table__inside">
-                  <input type="checkbox" />
-                  <h3>
-                    Yes, I would like to receive offers,updates and marketing
-                    materials via email and SMS.
-                  </h3>
-                </div>
-
-                <div className="button__div">
-                  <Button
-                    className="review__button"
-                    type="submit"
-                    onClick={handleSubmit}
-                  >
-                    REGISTER
-                  </Button>
-                </div>
-              </form>
-            </div>
-          </div>
-
-
-
 
           <div className="middlePage__from__css">
             <form onSubmit={handleSubmit} className="review__table__css">
               <h2>Register Now !!!</h2>
 
               <div className="inputform">
-                <label htmlFor="name"></label>
+                <label htmlFor="name">Name:</label>
                 <input
                   name="name"
                   type="text"
@@ -170,7 +144,7 @@ const MiddlePage = () => (
               </div>
 
               <div className="inputform">
-                <label htmlFor="email"></label>
+                <label htmlFor="email">Email:</label>
                 <input
                   name="email"
                   type="email"
@@ -185,7 +159,7 @@ const MiddlePage = () => (
               </div>
 
               <div className="inputform">
-                <label htmlFor="number"></label>
+                <label htmlFor="number">Contact No:</label>
                 <input
                   name="number"
                   type="tel"
@@ -197,15 +171,6 @@ const MiddlePage = () => (
                 {errors.number && touched.number && (
                   <div className="input-feedback">*{errors.number}</div>
                 )}
-
-              </div>
-
-              <div className="review__table__inside">
-                <input type="checkbox" />
-                <h3>
-                  Yes, I would like to receive offers,updates and marketing
-                  materials via email and SMS.
-                </h3>
               </div>
 
               <div className="button__div">
