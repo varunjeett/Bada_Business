@@ -1,0 +1,14 @@
+{
+  "projects": {
+    "default": "bada-business-simran"
+  },
+  "targets": {
+    "bada-business-simran": {
+      "hosting": {
+        "user": [
+          "badabusiness"
+        ]
+      }
+    }
+  }
+}

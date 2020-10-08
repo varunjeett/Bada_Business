@@ -1,10 +1,10 @@
 .landing__gifleft{
     background-color: rgb(1, 9, 54);
-    border-radius: 40px;
+    border-radius: 20px;
     display: flex;
     flex-direction: column;
-    width: 90%;
-    margin: 4%;
+    width: 100%;
+    
 }
 
 .landing__head{
@@ -22,8 +22,7 @@
 }
 
 .landing__gif{
-    flex: 0.4       ;
-    
+    flex: 0.4;
 }
 
 .landing__gif > img{
@@ -34,9 +33,11 @@
 }
 
 .landing__text{
+    flex: 0.3;
     color: white;
-    display: grid;
-    place-content: center;
+    /* display: grid;
+    place-content: center; */
+    /* text-align: center; */
     font-weight: bolder;
 }
 
@@ -56,10 +57,13 @@
         font-size: 0.5em;
         font-weight: 500;
     }
-      
-    .landing__gif{
-        display: none;
-        
+
+
+    .landing__gif > img{
+        width: fit-content ;
+        height: fit-content;
+        border-radius: 20px;
+        margin: 10px 10px;
     }
 
     .landing__text{

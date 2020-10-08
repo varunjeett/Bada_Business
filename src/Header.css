@@ -1,18 +1,10 @@
 .header{
-    height: 100px;
+    height: 20vh;
     width:100%;
     background-color: #1C2836;
     display: flex;
-    flex-direction: row;
     align-items: center;
     justify-content: space-around;
-    position: sticky;
-    top: 0;
-   z-index: 100;
-}
-
-.header__logo{
-    flex: 0.2;
 }
 
 .header__logo > img {
@@ -20,12 +12,10 @@
     width: 200px;
 }
 
-.header__contact {
-    flex: 0.5;
+.header__contact{
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     color: white;
-    justify-content: space-around;
 }
 
 .header__text {
@@ -33,14 +23,12 @@
     flex-direction: row;
 }
 
-.header__text > h4 {
-    margin-top: 6px ;
-    margin-left: 4px;
+.header__text > h5 {
+    margin-top: 5px ;
+    margin-left:2px;
 }
 
-
 .header__icons {
-    flex: 0.2;
     display:flex;
     flex-direction: column;
 } 
@@ -50,12 +38,29 @@
     text-decoration: none;
 
 }
+.icons{
+    margin: 10px;
+}
 
 @media screen and (max-width:960px){
 
+    
+
     .header{
+        height: 20vh;
+        width:100%;
+        background-color: #1C2836;
+        display: flex;
+        align-items: center;
         justify-content: space-around;
+        z-index: 100;
+        
     }
+
+    .header__logo {
+        flex:0.2;
+    }
+    
 
     
     .header__logo > img {
@@ -64,6 +69,7 @@
     }
     
     .header__contact {
+        flex:0.5;
         display: flex;
         flex-direction: column;
         color: white;
@@ -72,19 +78,11 @@
     .header__text {
         display: flex;
         flex-direction: row;
+        font-size: 1.0em !important;
     }
     
-    .header__text > h4 {
-        font-size: 0.7em;
-        margin-top: 3px ;
-        margin-left:2px;
-    }
-
-    .header__icons{
-        font-size: smaller !important;
-    }
-    
-    .header__end__icons {
+    .header__icons {
+        flex: 0.2;
         max-width: 20px;
         display:flex;
         flex-direction: column;
@@ -94,6 +92,9 @@
         color:white;
         text-decoration: none;
     
+    }
+    .icons{
+        font-size: 1.2em !important;
     }
     
 
