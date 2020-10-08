@@ -1,71 +1,85 @@
 .landingleft__gifleft{
-    background-color:rgb(1, 9, 54);
-    border-radius: 40px;
-    display: flex;
-    flex-direction: column;
-    width: 90%;
-    margin: 4%;
+    background-color: rgb(1, 9, 54);
+    border-radius: 20px;
+    width: 100%;
+    border-radius: 20px;
+    margin: 2% 0px;
 }
 
 .landingleft__head{
     padding-top: 10px;
-    flex: 0.3;
     color: white;
 }
 
+.landingleft__head > h1{
+    font-size: 2.0em;
+}
+
+
 
 .landingleft__all{
-    flex: 0.7;
     display: flex;
-    padding: 10px 10px;
+    padding: 10px 10px;     
 }
 
 .landingleft__gif{
-    flex: 0.4       ;
-    
+    flex: 0.5;
 }
 
 .landingleft__gif > img{
-    width: 500px;
-    height: 300px;
+    width: 90%;
+    height: 90%;
     border-radius: 20px;
     margin: 10px 10px;
 }
 
 .landingleft__text{
-    display: grid;
-    place-content: center;
+    flex: 0.5;
     color: white;
     font-weight: bolder;
 }
 
 @media screen and (max-width:960px){
 
+
     .landingleft__gifleft{
         background-color: rgb(1, 9, 54);
-        border-radius: 40px;
-        align-items: center;
-        width: 90%;
-        margin: 4%;
+        border-radius: 20px;
+        width: 100%;
     }
     
     .landingleft__head{
-        padding-top: 10px;
-        text-align: center;
-        font-size: 0.5em;
-        font-weight: 500;
+        color: white;
     }
-      
+    
+    .landingleft__head > h1{
+        font-size: 2.5vh;
+    }
+    
+    
+    
+    .landingleft__all{
+        display: flex;
+        flex-direction: column-reverse;
+    }
+    
     .landingleft__gif{
-        display: none;
-        
+        flex: 0.5;
     }
-
+    
+    .landingleft__gif > img{
+        width: 95%;
+        height: 80%;
+        border-radius: 20px;
+    }
+    
     .landingleft__text{
-        text-align: left ;
-        font-size: 0.7em;
-        font-weight: 500;
+        flex: 0.5;
+        color: white;
+        font-weight: bolder;
     }
-
+    .landingleft__text > p{
+        font-size: 2vw;
+    }
 
 }

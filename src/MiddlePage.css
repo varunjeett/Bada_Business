@@ -1,8 +1,8 @@
 .middlepage {
-  display: flex;
-  flex-direction: column;
-}
 
+  width: 100%;
+  align-content: center;
+}
 .middlepage__component1 {
   display: flex;
   flex-direction: row;
@@ -147,9 +147,28 @@ h1 {
   /* margin-right: 55%; */
 }
 
+.middlePage__head{
+  align-content: center;
+  justify-content: space-around;
+  margin: 6%; 
+}
+
+
 @media screen and (max-width: 960px) {
   .middlepage__form {
     display: none;
+  }
+
+  .middlepage__component1 {
+    display: flex;
+    flex-direction: row;
+    background-image: url("Media/bb2.gif");
+    width: 100%;
+    height: 40vh;
+    justify-content: space-around;
+    align-items: center;
+    /* background-size: 100% 100%; */
+    background-repeat: no-repeat;
   }
 
   .img__css > img {
