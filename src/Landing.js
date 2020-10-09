@@ -23,7 +23,7 @@ function Landing() {
                     - Do you want to grow your business Profitably? <br />
                     - Do you aspire to Learn business Strategies from Eminent Business Leaders and Industry Experts? <br /> <br />
 
-                    <b>Everything about Entrepreneurship course is the World’s Most Affordable Complete Business Management Program in Hindi.
+                    <b>Everything about Entrepreneurship course is the World’s Most Affordable Complete Business Management Program in Hindi(Vivek Bindra's Books).
                     EAE is a 2 years’ App based learning program, now Learn Anytime, Anywhere only on Bada Business Application.</b>  
                     </p>
                 </div>
