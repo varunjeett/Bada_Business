@@ -21,7 +21,7 @@ function Footer() {
                     <span >
                         <PersonIcon className="icon" />
                     </span>
-                    <h5>Simranjeet kaur</h5>
+                    <h5>Simranjeet</h5>
                 </div>
 
                 <div className="footer__text">

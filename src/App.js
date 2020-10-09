@@ -11,7 +11,7 @@ function App() {
         <Switch>
           <Route path="/">
             <div className="app__layout">
-              <Header />
+              <Footer />
               <MiddlePage />
               <Footer />
             </div>
