@@ -19,6 +19,7 @@
 
 .landing__all{
     display: flex;
+    align-items: center;
     padding: 10px 10px;     
 }
 
@@ -39,12 +40,19 @@
     font-weight: bolder;
 }
 
+.landing__text > p{
+    font-size: 2.5vh;
+}
+
 @media screen and (max-width:960px){
 
 
     .landing__gifleft{
         background-color: rgb(1, 9, 54);
         /* border-radius: 20px; */
+        display: flex;
+        flex-direction: column;
+        align-items: center;
         width: 100%;
     }
     
@@ -61,14 +69,15 @@
     .landing__all{
         display: flex;
         flex-direction: column;
-    }
+        align-items: center;
+    }        
     
     .landing__gif{
         flex: 0.4;
     }
     
     .landing__gif > img{
-        width: 95%;
+        width:95%;
         height: 80%;
         border-radius: 20px;
     }

@@ -22,7 +22,7 @@ function Landing5() {
                         - Are you looking for any kind of skill enhancement program to increase the productivity of your employees?<br />
                         - Do you want offer practical business learnings to your employees from the top businessmen and influencers of our country?<br /> <br />
 
-                        <b>Reach out to us for customized solutions suited to your business needs and requirements.</b>  </p>
+                        <b>Reach out to bada business for customized solutions suited to your business needs and requirements.</b>  </p>
                 </div>
             </div>
         </div>

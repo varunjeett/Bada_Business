@@ -19,6 +19,7 @@
 
 .landingleft__all{
     display: flex;
+    align-items: center;
     padding: 10px 10px;     
 }
 
@@ -39,13 +40,18 @@
     font-weight: bolder;
 }
 
+.landingleft__text > p{
+    font-size: 2.5vh;
+}
+
 @media screen and (max-width:960px){
 
 
     .landingleft__gifleft{
         background-color: rgb(1, 9, 54);
-        border-radius: 20px;
-        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
     }
     
     .landingleft__head{
@@ -61,6 +67,7 @@
     .landingleft__all{
         display: flex;
         flex-direction: column-reverse;
+         align-items: center;
     }
     
     .landingleft__gif{
