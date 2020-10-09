@@ -15,7 +15,7 @@ function Landingleft6() {
                         - Do you want to exponentially grow your brand image in a short span of time?<br />
                         - Do you want to build franchises or distribution network PAN India?<br />
                         - Are your marketing activities attracting the right number of leads to grow your business?<br />
-                        - Do you wish to showcase your brand on Youtube's no 1 Entrepreneurship Training Channel?<br /> <br />
+                        - Do you wish to showcase your brand on Dr. Vivek Bindra Youtube's no 1 Entrepreneurship Training Channel?<br /> <br />
 
                         <b>Get engaging and impressive Video format Case Studies by Dr. Vivek Bindra – Founder & CEO of Bada Business Pvt Ltd.<br />
                            Case studies are based on an in-depth study of your product/service along with competitive analysis.</b><br />

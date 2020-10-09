@@ -14,6 +14,8 @@ function Landingleft() {
                         - Do you want to become your own boss?<br />
                         - Do you want to start your own business with low investment?<br />
                         - Do you want to start a business and seek knowledge how to do it?<br />
+                        - Do you want to become freelance <br/>
+                        - Do you want to work from home and have your own office 
                         - Do you want to learn and earn at the same time? <br /> <br />
 
                         <b>Become an IBC, Work with Dr Vivek Bindra's team, Learn and Earn at your convenience - Part-time or Full-time.
