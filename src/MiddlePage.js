@@ -65,7 +65,6 @@ const MiddlePage = () => (
                     type="text"
                     value={values.name}
                     placeholder=" Enter your Name"
-                    inputform
                     onChange={handleChange}
                     onBlur={handleBlur}
                   />
