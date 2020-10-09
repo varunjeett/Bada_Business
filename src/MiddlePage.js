@@ -117,7 +117,6 @@ const MiddlePage = () => (
               </form>
             </div>
           </div>
-
           <div className="middlePage__from__css">
             <form onSubmit={handleSubmit} className="review__table__css">
               <h2>Register Now !!!</h2>
@@ -180,24 +179,12 @@ const MiddlePage = () => (
           </div>
 
           <div className="middlePage__head">
-            <div className="middle__landing">
               <Landing />
-            </div>
-            <div className="middle__landingleft">
               <Landingleft />
-            </div>
-            <div className="middle__landing">
               <Landing3 />
-            </div>
-            <div className="middle__landingleft">
               <Landingleft4 />
-            </div>
-            <div className="middle__landing">
               <Landing5 />
-            </div>
-            <div className="middle__landingleft">
-              <Landingleft6 />
-            </div>
+              <Landingleft6 />            
           </div>
 
           <div className="middle__bottom">

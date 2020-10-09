@@ -1,76 +1,94 @@
 .landing__gifleft{
     background-color: rgb(1, 9, 54);
     border-radius: 20px;
-    display: flex;
-    flex-direction: column;
     width: 100%;
-    
+    border-radius: 20px;
+    margin: 2% 0px;
 }
 
 .landing__head{
     padding-top: 10px;
-    flex: 0.3;
-    text-align: center;
     color: white;
 }
 
+.landing__head > h1{
+    font-size: 2.0em;
+}
+
+
 
 .landing__all{
-    flex: 0.7;
     display: flex;
-    padding: 10px 10px;
+    align-items: center;
+    padding: 10px 10px;     
 }
 
 .landing__gif{
-    flex: 0.4;
+    flex: 0.5;
 }
 
 .landing__gif > img{
-    width: 500px;
-    height: 300px;
+    width: 90%;
+    height: 90%;
     border-radius: 20px;
     margin: 10px 10px;
 }
 
 .landing__text{
-    flex: 0.3;
+    flex: 0.5;
     color: white;
-    /* display: grid;
-    place-content: center; */
-    /* text-align: center; */
     font-weight: bolder;
+}
+
+.landing__text > p{
+    font-size: 2.5vh;
 }
 
 @media screen and (max-width:960px){
 
+
     .landing__gifleft{
         background-color: rgb(1, 9, 54);
-        border-radius: 40px;
+        /* border-radius: 20px; */
+        display: flex;
+        flex-direction: column;
         align-items: center;
-        width: 90%;
-        margin: 4%;
+        width: 100%;
     }
     
     .landing__head{
-        padding-top: 10px;
-        text-align: center;
-        font-size: 0.5em;
-        font-weight: 500;
-    }
-
-
-    .landing__gif > img{
-        width: fit-content ;
-        height: fit-content;
-        border-radius: 20px;
-        margin: 10px 10px;
-    }
-
-    .landing__text{
-        text-align: left ;
-        font-size: 0.7em;
-        font-weight: 500;
+        color: white;
     }
     
+    .landing__head > h1{
+        font-size: 2.5vh;
+    }
+    
+    
+    
+    .landing__all{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }        
+    
+    .landing__gif{
+        flex: 0.4;
+    }
+    
+    .landing__gif > img{
+        width:95%;
+        height: 80%;
+        border-radius: 20px;
+    }
+    
+    .landing__text{
+        flex: 0.6;
+        color: white;
+        font-weight: bolder;
+    }
+    .landing__text > p{
+        font-size: 2vw;
+    }
 
 }
