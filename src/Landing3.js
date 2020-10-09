@@ -1,8 +1,6 @@
 import React from 'react'
 import img1 from './Media/banner3.gif'
 import './Landing.css'
-
-
 function Landing3() {
     return (
         <div className="landing__gifleft">
@@ -24,7 +22,7 @@ function Landing3() {
                         - Do you want to acquire new customers and need help?<br />
                         - Do you want to learn strategies to thrive in Cut throat competition?<br /> <br />
 
-                        <b>Problem Solving Courses are designed to give practical solutions & learning to the most important burning problems faced by Entrepreneurs.
+                        <b>Problem Solving Courses are designed by Dr. Vivek Bindra's motivational speaker and international business coach to give practical solutions & learning to the most important burning problems faced by Entrepreneurs.
                            If you are interested in starting your own business or want to expand your existing business, but, are facing specific challenges, you can buy these courses.</b>  </p>
                 </div>
             </div>
