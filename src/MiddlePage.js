@@ -54,6 +54,7 @@ const MiddlePage = () => (
         <div className="middlepage">
           <div className="middlepage__component1">
             <div className="blank"></div>
+            
             <div className="middlepage__form">
               <form onSubmit={handleSubmit} className="review__table">
                 <h2>Register Now !!!</h2>

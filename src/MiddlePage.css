@@ -22,6 +22,8 @@
 .middlepage__form { 
   flex: 0.25;
   width: 100%;
+  padding-top: 5px;
+  padding-bottom: 5px;
 }
 
 .review__table {
@@ -32,12 +34,13 @@
   display: flex;
   justify-content: space-around;
   flex-direction: column;
-  padding-top: 5px;
-  padding-bottom: 5px;
+  padding-top: 10px;
+  padding-bottom: 10px;
   align-items: center;
 }
 
 .inputform {
+  padding-top: 8px;
   padding-right: 5px;
   width: 90%;
   display: flex;
@@ -77,6 +80,7 @@ input[type="checkbox"] {
 .button__div {
   margin-top: 5px;
   margin-bottom: 5px;
+  padding-top: 8px;
 }
 
 .review__button {

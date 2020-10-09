@@ -38,6 +38,7 @@ function Footer() {
             <a
               className={"footer__link"}
               href={`tel: 9315744106`}
+              rel="noopener noreferrer"
             >
               9315744106
             </a>
@@ -54,6 +55,7 @@ function Footer() {
               className={"footer__link"}
               href={`mailto: kuldip_simran@yahoo.com`}
               target={"_blank"}
+              rel="noopener noreferrer"
             >
               kuldip_simran@yahoo.com
             </a>
