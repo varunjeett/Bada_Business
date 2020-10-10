@@ -30,7 +30,7 @@ function Footer() {
           <span>
             <BusinessCenterIcon className="icon" />
           </span>
-          <h5>IBC </h5>
+          <h5>IBC</h5>
         </div>
 
         <div className="footer__text">
