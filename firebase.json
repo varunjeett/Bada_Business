@@ -14,7 +14,8 @@
       }
     ]
   },
-{
+  
+  {
   "target": "admin",
   "public": "build",
       "ignore": [

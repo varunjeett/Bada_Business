@@ -9,6 +9,9 @@ import FacebookIcon from "@material-ui/icons/Facebook";
 import logo from "./Media/logo.png";
 
 function Footer() {
+  const em = "kuldip_simran@yahoo.com";
+  const num = "9315744106";
+
   return (
     <div className="footer">
       <div className="footer__logo">
@@ -35,12 +38,8 @@ function Footer() {
             <PhoneIcon className="icon" />
           </span>
           <h5>
-            <a
-              className={"footer__link"}
-              href={`tel: 9315744106`}
-              rel="noopener noreferrer"
-            >
-              9315744106
+            <a className={"footer__link"} href={`tel: ${num}`}>
+              {num}
             </a>
           </h5>
         </div>
@@ -53,11 +52,11 @@ function Footer() {
           <h5>
             <a
               className={"footer__link"}
-              href={`mailto: kuldip_simran@yahoo.com`}
+              href={`mailto: ${em}`}
               target={"_blank"}
               rel="noopener noreferrer"
             >
-              kuldip_simran@yahoo.com
+              {em}
             </a>
           </h5>
         </div>
