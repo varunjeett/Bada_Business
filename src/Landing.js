@@ -21,7 +21,7 @@ function Landing() {
                     - Has the downturn in the economy due to Corona, impacted your business? <br />
                     - Do you wish to expand your business in different geographies? <br />
                     - Do you want to grow your business Profitably? <br />
-                    - Do you want to generate franchise modle for your business <br/>
+                    - Do you want to generate franchise model for your business <br/>
                     - Do you aspire to Learn business Strategies from Eminent Business Leaders and Industry Experts? <br /> <br />
 
                     <b>Everything about Entrepreneurship course is the World’s Most Affordable Complete Business Management Program in Hindi(Vivek Bindra's Books).
