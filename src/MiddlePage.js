@@ -13,6 +13,7 @@ import { Button } from "@material-ui/core";
 import { db } from "./firebase";
 import * as Yup from "yup";
 import { Formik } from "formik";
+import Info from "./Info";
 
 const obj=new Date();
 
@@ -206,6 +207,12 @@ const MiddlePage = () => (
               <button className="end__button__END">More</button>
             </a>
           </div>
+
+
+        <div className="middle__info">
+          <Info />
+        </div>
+
         </div>
       );
     }}
