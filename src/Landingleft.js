@@ -22,7 +22,7 @@ function Landingleft() {
             <br />
             - Do you want to work from home and have your own office?
             <br />
-            - Do you want to learn and earn at the same time? <br />
+            - Do you want to learn and earn at the same time? <br /> <br />
             <b>
               Become an IBC, Work with Dr Vivek Bindra's team, Learn and Earn at
               your convenience - Part-time or Full-time. Earn Rs1 Lakh – Rs20
