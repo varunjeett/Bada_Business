@@ -4,7 +4,6 @@ import Landingleft from "./Landingleft";
 import "./MiddlePage.css";
 import f1 from "./Media/f1.jpg";
 import f2 from "./Media/f2.jpg";
-import img1 from "./Media/banner0.gif";
 import Landing3 from "./Landing3";
 import Landing5 from "./Landing5";
 import Landingleft4 from "./Landingleft4";
@@ -15,23 +14,17 @@ import * as Yup from "yup";
 import { Formik } from "formik";
 import Info from "./Info";
 
-const obj=new Date();
-
 const MiddlePage = () => (
-  
+
   <Formik
     initialValues={{ name: "", number: "", email: "" }}
-    
-    // eslint-disable-next-line
-    onSubmit={(values, { setSubmitting }) => {
-      console.log(values);
-
+    onSubmit={(values, { resetForm }) => {
       db.collection("info")
         .add({
           name: values.name,
           number: values.number,
           email: values.email,
-          timestamp: obj.getTime()
+          timestamp: new Date().getTime()
         })
         .then(
           alert("Thanks for the submission, we'll get back to you soon !!!")
@@ -39,6 +32,7 @@ const MiddlePage = () => (
         .catch((error) => {
           alert(error.message);
         });
+      resetForm({ values: "" });
     }}
     validationSchema={Yup.object().shape({
       name: Yup.string().required("Name is required"),
@@ -46,6 +40,7 @@ const MiddlePage = () => (
       number: Yup.string().length(10, "Length should be equal to 10"),
     })}
   >
+
     {(props) => {
       const {
         values,
@@ -58,71 +53,70 @@ const MiddlePage = () => (
 
       return (
         <div className="middlepage">
-
           <div className="middlepage__component1">
-              <div className="blank"></div>
-              <div className="middlepage__form">
-                <form onSubmit={handleSubmit} className="review__table">
-                  <h2>Register Now !!!</h2>
-                  
-                  <div className="inputform">
-                    <label htmlFor="name">Name:</label>
-                    <input
-                      name="name"
-                      type="text"
-                      value={values.name}
-                      placeholder=" Enter your Name"
-                      inputform     onChange={handleChange}
-                      onBlur={handleBlur}
-                    />
-                    {errors.name && touched.name && (
-                      <div className="input-feedback">*{errors.name}</div>
-                    )}
-                  </div>
-
-                  <div className="inputform">
-                    <label htmlFor="email">Email:</label>
-                    <input
-                      name="email"
-                      type="email"
-                      value={values.email}
-                      placeholder=" Enter your Email"
-                      onChange={handleChange}
-                      onBlur={handleBlur}
-                    />
-
-                    {errors.email && touched.email && (
-                      <div className="input-feedback">*{errors.email}</div>
-                    )}
-                  </div>
-
-                  <div className="inputform">
-                    <label htmlFor="number">Contact No.:</label>
-                    <input
-                      name="number"
-                      type="tel"
-                      value={values.number}
-                      placeholder=" Enter your Contact No."
-                      onChange={handleChange}
-                      onBlur={handleBlur}
-                    />
-                    {errors.number && touched.number && (
-                      <div className="input-feedback">*{errors.number}</div>
-                    )}
-                  </div>
-
-                  <div className="button__div">
-                    <Button
-                      className="review__button"
-                      type="submit"
-                      onClick={handleSubmit}
-                    >
-                      REGISTER
-                    </Button>
-                  </div>
-                </form>
-              </div>
+            <div className="blank"></div>
             
+            <div className="middlepage__form">
+              <form onSubmit={handleSubmit} className="review__table">
+                <h2>Register Now !!!</h2>
+
+                <div className="inputform">
+                  <label htmlFor="name">Name:</label>
+                  <input
+                    name="name"
+                    type="text"
+                    value={values.name}
+                    placeholder=" Enter your Name"
+                    onChange={handleChange}
+                    onBlur={handleBlur}
+                  />
+                  {errors.name && touched.name && (
+                    <div className="input-feedback">*{errors.name}</div>
+                  )}
+                </div>
+
+                <div className="inputform">
+                  <label htmlFor="email">Email:</label>
+                  <input
+                    name="email"
+                    type="email"
+                    value={values.email}
+                    placeholder=" Enter your Email"
+                    onChange={handleChange}
+                    onBlur={handleBlur}
+                  />
+
+                  {errors.email && touched.email && (
+                    <div className="input-feedback">*{errors.email}</div>
+                  )}
+                </div>
+
+                <div className="inputform">
+                  <label htmlFor="number">Contact No.:</label>
+                  <input
+                    name="number"
+                    type="tel"
+                    value={values.number}
+                    placeholder=" Enter your Contact No."
+                    onChange={handleChange}
+                    onBlur={handleBlur}
+                  />
+                  {errors.number && touched.number && (
+                    <div className="input-feedback">*{errors.number}</div>
+                  )}
+                </div>
+
+                <div className="button__div">
+                  <Button
+                    className="review__button"
+                    type="submit"
+                    onClick={handleSubmit}
+                  >
+                    REGISTER
+                  </Button>
+                </div>
+              </form>
+            </div>
           </div>
           <div className="middlePage__from__css">
             <form onSubmit={handleSubmit} className="review__table__css">

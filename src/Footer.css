@@ -42,6 +42,11 @@
     margin: 10px;
 }
 
+.footer__link {
+    text-decoration: none;
+    color: white;
+}
+
 @media screen and (max-width:960px){
 
     .footer{
